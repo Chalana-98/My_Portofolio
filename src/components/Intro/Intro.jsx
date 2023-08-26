@@ -3,7 +3,7 @@ import './Intro.css'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Insagram from '../../img/instagram.png'
-import cvboynew from '../../img/cvboynew.png'
+import cvboy from '../../img/cvboy.png'
 import figma from '../../img/figma.png'
 
 
@@ -27,7 +27,7 @@ function Intro() {
             <button className="btn i-button">Contact Me</button>
 
             <div className="i-icons">
-              <img src={Github} alt="" />
+              <img src={Github } alt="" />
               <img src={LinkedIn} alt="" />
               <img src={Insagram} alt="" />
             </div>
@@ -35,7 +35,7 @@ function Intro() {
         <div className="i-right">
         
               
-              <img src={cvboynew} alt="" />
+              <img src={cvboy} alt="" />
               {/* <div class="loader"></div> */}
               <img src={figma} alt="" />
               <div style={{top:'60%',left:'-3%'}}>
