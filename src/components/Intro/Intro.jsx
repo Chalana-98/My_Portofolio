@@ -5,19 +5,17 @@ import LinkedIn from '../../img/linkedin.png'
 import Insagram from '../../img/instagram.png'
 import cvboy from '../../img/cvboy.png'
 import figma from '../../img/figma.png'
-
-
-import glassesimoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import Android from '../../img/android.png'
 import Html from '../../img/html.png'
+import Whatsapp from '../../img/whatsapp.png'
 
 function Intro() {
   return (
      <div className="intro">
         <div className="i-left">
             <div className="i-name">
-                <span>Hy! I'm </span>
+                <span>Hi I'm </span>
                 <span>Chalana Shehara</span>
                 <span>Frontend Developer with high level of
                   Experience in web development , producting the
@@ -29,7 +27,7 @@ function Intro() {
             <div className="i-icons">
               <img src={Github } alt="" />
               <img src={LinkedIn} alt="" />
-              <img src={Insagram} alt="" />
+              <img src={Whatsapp} alt="" />
             </div>
         </div>
         <div className="i-right">

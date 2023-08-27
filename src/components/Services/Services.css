@@ -1,38 +1,4 @@
 
-.btn {
-    padding: 0.8em 2em 0.8em 2.5em;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 15px;
-    color: #000000;
-    letter-spacing: 0.3em;
-    text-shadow: -2px 2px 5px #3a79ee;
-    background-color: transparent;
-    border: 2px solid #bbfeb1;
-    box-shadow: 0 0 0px 1px #3a79ee,
-      0 0 10px 2px #3a79ee,
-      inset 0 0 0px 1px #3a79ee,
-      inset 0 0 10px 2px #3a79ee;
-    transition: 100ms;
-  }
-  
-  .btn:hover {
-    box-shadow: 0 0 0px 1px #3a79ee,
-      0 0 10px 2px #3a79ee,
-      inset 0 0 0px 1px #3a79ee,
-      inset 0 0 30px 2px #3a79ee;
-    text-shadow: 0 0 10px #3a79ee;
-    transform: translateY(-5px);
-  }
-  
-  .btn:active {
-    box-shadow: 0 0 0px 1px #3a79ee,
-      0 0 25px 2px #3a79ee,
-      inset 0 0 0px 1px #3a79ee,
-      inset 0 0 30px 2px #3a79ee;
-    transform: translateY(1px);
-  }
-
 .services{
   padding: 0 3rem 0 3rem;
   display: flex;
@@ -46,6 +12,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  
+
 }
 
 
@@ -64,10 +32,85 @@
 .awesome > :nth-child(3){
   color: var(--gray);
   font-size: 14px;
+  margin-bottom: 4rem;
 }
 
 .btn {
   width: 8rem;
   height: 2rem;
   margin-top: 1rem;
+}
+
+.cards{
+  position: relative;
+}
+
+.cards>*{
+  position: absolute;
+}
+
+w-right{
+  position: relative;
+}
+
+.w-mainCircle{
+  position: relative;
+  left: 1rem;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+}
+
+.w-mainCircle>*{
+  position: relative;
+}
+
+.w-mainCircle > :nth-child(1){
+  top: -5rem;
+  left: 1.5rem;
+  transform: scale(0.35);
+  padding: 2rem;
+  
+}
+
+.w-mainCircle > :nth-child(2){
+  top: -9rem;
+  left: -5rem;
+  transform: scale(0.35);
+  padding: 2rem;
+  
+}
+
+.w-mainCircle > :nth-child(3){
+  top: -12.5rem;
+  left: 2.5rem;
+  transform: scale(0.43);
+  padding: 1rem;
+}
+
+.w-mainCircle > :nth-child(4){
+  top: -28.2rem;
+  left: 7.5rem;
+  transform: scale(0.35);
+  padding: 2rem;
+}
+
+.w-mainCircle > :nth-child(5){
+  top: -38.5rem;
+  left: 1.7rem;
+  transform: scale(0.35);
+  padding: 2rem;
+}
+
+.w-secCircle{
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  background: none;
+  box-shadow: var(--smboxShadow);
 }
