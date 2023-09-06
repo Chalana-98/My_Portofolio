@@ -9,8 +9,11 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import Android from '../../img/android.png'
 import Html from '../../img/html.png'
 import Whatsapp from '../../img/whatsapp.png'
+import {motion} from 'framer-motion'
 
 function Intro() {
+
+const transition = {duration : 2, type : 'spring'}
   return (
      <div className="intro">
         <div className="i-left">
@@ -30,18 +33,35 @@ function Intro() {
               <img src={Whatsapp} alt="" />
             </div>
         </div>
+        
         <div className="i-right">
         
               
               <img src={cvboy} alt="" />
               {/* <div class="loader"></div> */}
-              <img src={figma} alt="" />
-              <div style={{top:'60%',left:'-3%'}}>
+              <motion.img 
+              initial={{ left:"-36%" }}
+              whileInView={{ left:"-24%" }}
+              transition={transition}
+              
+              src={figma} alt="" />
+              <motion.div 
+              
+              initial={{ left:"-36%" }}
+              whileInView={{ left:"-24%" }}
+              transition={transition}
+              style={{top:'60%',left:'-3%'}}>
                 <FloatingDiv image={Html} txt1='Web' txt2='Developer'/>
-              </div>
-              <div style={{top:'-6%' , left:'75%'}}>
+              </motion.div>
+              <motion.div
+              initial={{ right:"36%" }}
+              whileInView={{ right:"-10%" }}
+              transition={transition}
+              
+              
+              style={{top:'-6%' , left:'75%'}}>
                 <FloatingDiv image={Android} txt1='Mobile App' txt2='Developer'/>
-              </div>
+              </motion.div>
               {/* blur div */}
               <div className="blur" style={{background:
               "rgb(238 210 255)"}}></div>

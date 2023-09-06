@@ -1,12 +1,14 @@
 .floatingdiv{
     display: flex;
     justify-content: space-around;
-    background: white;
+    background: rgb(192, 196, 243);
     box-shadow: var(--boxShadow);
     border-radius: 17px;
     align-items: center;
     padding: 0px 10px 0px 0px;
     height: 3.5rem;
+
+    
 }
 
 .floatingdiv>img{

@@ -3,12 +3,21 @@ import './Footer.css'
 
 import FooterD from '../../img/footerd.png'
 
-function Footer() {
+function Footer(email) {
   return (
+      
+
     <div className="footer">
+   {/* test */}
+   
+  
+
+   {/* test */}
+
+
         <img src={FooterD} alt=""  style={{width:'100%'}}/>
         <div className="f-content">
-            <span >chalanashehara19@gmail.com</span>
+            {/* <span >chalanashehara19@gmail.com</span> */}
             <div className="f-icons">
             <div class="social-buttons">
   <a href="#" class="social-button github">

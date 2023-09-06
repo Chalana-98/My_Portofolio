@@ -1,12 +1,13 @@
 import React from 'react'
 import './Navbar.css'
+import Toggle from '../Toggle/Toggle'
 
 function Navbar() {
   return (
    <div className="n-wrapper">
        <div className="n-left">
         <div className="n-name">Chalana</div>
-        <span>toggle</span>
+        <Toggle/>
         
        </div>
        <div className="n-right">
@@ -14,9 +15,9 @@ function Navbar() {
             <ul style={{listStyleType:'none'}}>
                 <li>Home</li>
                 <li>Service</li>
-                <li>Experiance</li>
+               
                 <li>Portofolio</li>
-                <li>Testimonials</li>
+               
             </ul>
          </div>
          <button class="btn">

@@ -1,0 +1,43 @@
+.portfolio{
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+   
+    
+}
+
+/* heading */
+
+.portfolio h1:nth-last-of-type(1){
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 30vw;
+   
+}
+
+/* slider */
+.portfolio .swiper{
+    overflow: visible!important;
+}
+
+.portfolio-slider .swiper-slider{
+    width: 20rem;
+    
+}
+
+
+
+.portfolio img {
+    width: 21rem;
+    filter: drop-shadow(-13px 15px 13px rgba (0,0,0,0.25));
+    border-radius: 15px;
+   
+  }
+
+
+  /* test */
+
+ 
