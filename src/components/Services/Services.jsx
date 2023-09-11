@@ -6,14 +6,16 @@ import Developer from '../../img/developer.png'
 import UIUX from '../../img/uiux-01.png'
 import Flutter from '../../img/flutter.png'
 import Android from '../../img/android.png'
-
-
 import Illust from '../../img/Illust.png'
 import ReactJS from '../../img/reactjs.png'
 import Angular from '../../img/angular.png'
 import Laravel from '../../img/laravel.png'
 
+import {motion} from 'framer-motion'
+
 function Services() {
+const transition = {duration : 1, type:'spring'}
+
   return (
    <div className="services">
          {/* left side */}
@@ -27,7 +29,14 @@ function Services() {
                 </span>
                 <div className="w-right">
 
-                <div className="w-mainCircle">
+                <motion.div 
+                initial={{ rotate:45 }}
+                whileInView={{ rotate:0 }}
+                viewport={{ margin:'-40px' }}
+                transition={{ duration:3.5 , type:'spring'}}
+                
+                
+                className="w-mainCircle">
 
                   <div className="w-secCircle">
                     <img src={Angular} alt="" />
@@ -49,7 +58,7 @@ function Services() {
                   
                   
 
-                </div>
+                </motion.div>
                 </div>
 <div className="blur s-blur" style={{background:
               "rgb(238 210 255)"}}></div>
@@ -59,30 +68,48 @@ function Services() {
     
          {/* right side */}
 
-         <div className="cards">
-              <div style={{left:'10rem'}} >
+         <div className="cards"  >
+              <motion.div
+              whileInView={{ left:'16rem' }}
+              initial={{ left:'2rem' }}
+              transition={transition}
+              
+              style={{left:'1rem',    width: '100px;'}} >
                 <Card 
                   emoji = {Designer}
                   heading = {'Design'}
                   detail = {"Figma, sektch , photoshop, Adobe XD"}
                   />
                 
-              </div>
+              </motion.div>
+              
 
               {/* second card */}
              
-              <div style={{top:'12rem' , left:'-8rem'}} >
+              <motion.div
+              whileInView={{ left:'1rem' }}
+              initial={{ left:'-20rem' }}
+              transition={transition}
+              
+              
+              style={{top:'12rem' , left:'-1rem'}} >
                 <Card 
                   emoji = {Developer}
                   heading = {'Devloper'}
                   detail = {"Flutter,Angular, ReactJS"}
                   />
                 
-              </div>
+              </motion.div>
 
               {/* 3rd card*/}
 
-              <div style={{top:'18rem' , left:'12rem'}} >
+              <motion.div 
+              whileInView={{ left:'17rem' }}
+              initial={{ left:'20rem' }}
+              transition={transition}
+              
+              
+              style={{top:'18rem' , left:'1rem', }} >
                 <Card 
                   emoji = {UIUX}
                   heading = {'UI/UX'}
@@ -90,7 +117,7 @@ function Services() {
                   style
                   />
                 
-              </div>
+              </motion.div>
 
          </div>
    </div>

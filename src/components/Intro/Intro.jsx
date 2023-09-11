@@ -37,7 +37,12 @@ const transition = {duration : 2, type : 'spring'}
         <div className="i-right">
         
               
-              <img src={cvboy} alt="" />
+              <motion.img 
+              
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              
+              src={cvboy} alt="" />
               {/* <div class="loader"></div> */}
               <motion.img 
               initial={{ left:"-36%" }}

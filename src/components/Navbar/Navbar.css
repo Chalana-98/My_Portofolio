@@ -74,3 +74,10 @@
       inset 0 0 30px 2px #3a79ee;
     transform: translateY(1px);
   }
+
+
+  @media screen and (max-width: 480px) {
+    .n-list {
+      display: none;
+    }
+  }
